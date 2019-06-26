@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Pit_Scouting"
+            android:label="@string/title_activity_pit__scouting"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Match_Scouting"
+            android:label="@string/title_activity_match__scouting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Main_Menu" />
+        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
