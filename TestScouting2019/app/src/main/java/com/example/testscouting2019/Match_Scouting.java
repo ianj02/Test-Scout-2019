@@ -2,6 +2,7 @@ package com.example.testscouting2019;
 
 import android.os.Bundle;
 
+import com.example.testscouting2019.ui.main.Match_Sect_Pag_Adapt;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
@@ -13,7 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.testscouting2019.ui.main.SectionsPagerAdapter1;
+import com.example.testscouting2019.ui.main.Match_Sect_Pag_Adapt;
 
 public class Match_Scouting extends AppCompatActivity {
 
@@ -21,7 +22,7 @@ public class Match_Scouting extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match__scouting);
-        SectionsPagerAdapter1 sectionsPagerAdapter = new SectionsPagerAdapter1(this, getSupportFragmentManager());
+        Match_Sect_Pag_Adapt sectionsPagerAdapter = new Match_Sect_Pag_Adapt(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
